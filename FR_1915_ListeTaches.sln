@@ -9,18 +9,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FR_1915_ListeTaches.Tests",
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Test|Any CPU = Debug Test|Any CPU
 		Debug|Any CPU = Debug|Any CPU
+		Release Test|Any CPU = Release Test|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DC965CE-8401-46EE-AF33-2691AED6E08F}.Debug Test|Any CPU.ActiveCfg = Debug Test|Any CPU
+		{0DC965CE-8401-46EE-AF33-2691AED6E08F}.Debug Test|Any CPU.Build.0 = Debug Test|Any CPU
 		{0DC965CE-8401-46EE-AF33-2691AED6E08F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0DC965CE-8401-46EE-AF33-2691AED6E08F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC965CE-8401-46EE-AF33-2691AED6E08F}.Release Test|Any CPU.ActiveCfg = Release Test|Any CPU
+		{0DC965CE-8401-46EE-AF33-2691AED6E08F}.Release Test|Any CPU.Build.0 = Release Test|Any CPU
 		{0DC965CE-8401-46EE-AF33-2691AED6E08F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DC965CE-8401-46EE-AF33-2691AED6E08F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F024C736-8E63-492E-9977-CE813E6D80AC}.Debug Test|Any CPU.ActiveCfg = Debug Test|Any CPU
+		{F024C736-8E63-492E-9977-CE813E6D80AC}.Debug Test|Any CPU.Build.0 = Debug Test|Any CPU
 		{F024C736-8E63-492E-9977-CE813E6D80AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F024C736-8E63-492E-9977-CE813E6D80AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F024C736-8E63-492E-9977-CE813E6D80AC}.Release Test|Any CPU.ActiveCfg = Release Test|Any CPU
+		{F024C736-8E63-492E-9977-CE813E6D80AC}.Release Test|Any CPU.Build.0 = Release Test|Any CPU
 		{F024C736-8E63-492E-9977-CE813E6D80AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F024C736-8E63-492E-9977-CE813E6D80AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
