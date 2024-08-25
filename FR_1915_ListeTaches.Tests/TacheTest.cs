@@ -1,6 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NSubstitute;
 using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Text;
 
 namespace FR_1915_ListeTaches.Tests
 {
@@ -97,6 +103,21 @@ namespace FR_1915_ListeTaches.Tests
             var obtenu = Tache.FiltrerTerminees(tachesABCD);
 
             CollectionAssert.AreEqual(attendu, obtenu.ToList());
+        }
+        [TestMethod]
+        public void LigneCSV_Standard_RetourneLigne()
+        {
+            var tache1erAvril2j = NouvelleTache1erAvril(titre: "Poisson d'avril", duree: 2);
+            var stubFormat = Substitute.For<IFormatProvider>();
+
+            stubFormat.GetFormat(Arg.Any<Type>()).Returns(DateTimeFormatInfo.InvariantInfo);
+
+            tache1erAvril2j.Effectuer(_1j_);
+
+            string attendu = "Poisson d'avril;04/01/2018;2.00:00:00;1.00:00:00;1.00:00:00",
+                   obtenu = tache1erAvril2j.LigneCSV(stubFormat);
+
+            Assert.AreEqual(attendu, obtenu);
         }
     }
 }
